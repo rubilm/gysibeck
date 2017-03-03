@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="gysibeck.ch">
+    <meta name="author" content="wsc3 Group 2">
+
+    <title>Gysibeck</title>
+
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/image-hover.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar-default navbar-fixed-top">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3 pull-left">
+            <a href="index.html"><img src="img/logo.png" style="height: 45px;" alt="Gysibeck Logo"></a>
+        </div>
+        <div class="container col-md-5 col-md-offset-2">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse js-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produkte <span class="caret"></span></a>
+                        <ul class="dropdown-menu navbar-dropdown">
+                            <li><a href="views/product_torten.html">Torten</a></li>
+                            <li><a href="#">Znüni</a></li>
+                            <li><a href="#">Schokolade</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="views/about.html">Über uns</a></li>
+                    <li><a href="views/contact.html">Kontakt</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid container-background-home" role="main">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <!--<img src="img/banner/bread.jpg" style="width: 100%;"/> -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner banner-image" role="listbox">
+                    <div class="item active">
+                        <img src="img/banner/zopf.jpg" alt="Zopf" class="img-responsive">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/banner/bread2.jpg" alt="Brot" class="img-responsive">
+                    </div>
+
+                    <div class="item">
+                        <img src=img/banner/schlumbi.jpg alt="Schlumbi" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src=img/banner/croissant.jpg alt="Gipfeli" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src=img/banner/berliner.jpg alt="Berliner" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src=img/banner/praline.jpg alt="Praliné" class="img-responsive">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 product-background">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Wochenhits</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                             src="img/products/torten/erbeertoren.jpg"
+                             alt="">
+                    </div>
+                    <p class="image-box-title">Erbeertorte <br>CHF 20.00</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                             src="img/products/coffee_croissant.jpg"
+                             alt="">
+                    </div>
+                    <p class="image-box-title">Kaffe und Croissant <br>CHF 6.00</p>
+                </div>
+                <div class="col-md-4" onclick="location.href='views/nutella_torte.html';">
+                    <div class="hovereffect">
+                        <img class="img-responsive"
+                             src="img/products/torten/nutella_torte.jpeg"
+                             alt="">
+                    </div>
+                    <p class="image-box-title">Nutellatorte <br>CHF 30.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer container-fluid">
+    <div class="row">
+        <br>
+        <div class="col-md-3 col-md-offset-2">
+            Zetzwil<br>
+            Hauptstrasse 62<br>
+            5732 Zetzwil<br><br>
+            Tel: 062 773 12 70<br><br>
+            Öffnungszeiten:<br>
+            Mo-Fr: 05.00 – 18.30 Uhr <br>
+            Sa: 09.00 – 17.00 Uhr <br>
+        </div>
+        <div class="col-md-3 footer-border-left">
+            Unterkulm<br>
+            Hauptstrasse 16<br>
+            5726 Unterkulm<br><br>
+            Tel: 062 773 36 89<br><br>
+            Öffnungszeiten:<br>
+            Mo-Fr: 05.00 – 18.30 Uhr <br>
+            Sa: 09.00 – 17.00 Uhr <br>
+        </div>
+        <div class="col-md-3 footer-border-left">
+            Beinwil am See<br>
+            Häsigasse 1<br>
+            5712 Beinwil am See<br><br>
+            Tel: 062 771 19 13<br><br>
+            Öffnungszeiten:<br>
+            Mo-Fr: 05.00 – 18.30 Uhr <br>
+            Sa: 09.00 – 17.00 Uhr <br>
+        </div>
+    </div>
+    <br>
+</div>
+</body>
+</html>
